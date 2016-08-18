@@ -1,0 +1,1 @@
+/usr/local/cuda-5.5/bin/nvcc -O3 -ccbin g++ -I../../common/inc -I../include -I./  -m64 --ptxas-options=-v  -gencode arch=compute_35,code=\"sm_35,compute_35\" -o test.o -c contract_kernels.cu
